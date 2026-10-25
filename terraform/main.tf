@@ -1,7 +1,7 @@
 # Create the Workers KV Namespace for persistent task storage
 resource "cloudflare_workers_kv_namespace" "tasks_kv" {
-  account_id = var.cloudflare_account_id
-  title      = var.kv_namespace_name
+  account_id = var.855f0594f5c5ed3a347f39fae869563d
+  title      = var.student_tasks_app
 }
 
 # Deploy the Cloudflare Worker script as a module and bind it to the KV namespace
