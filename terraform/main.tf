@@ -5,7 +5,7 @@ resource "cloudflare_workers_kv_namespace" "tasks_kv" {
 
 resource "cloudflare_worker_script" "task_worker" {
   account_id         = var.cloudflare_account_id
-  name               = "student-task-manager-worker"
+  name               = "student-task-manager-worker-live"
   content            = file("${path.module}/../application/worker.js")
   compatibility_date = "2024-03-01"
 
