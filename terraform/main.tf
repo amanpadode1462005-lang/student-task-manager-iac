@@ -1,5 +1,5 @@
 resource "cloudflare_workers_kv_namespace" "tasks_kv" {
-  title      = "student_task_manager_kv"
+  title      = "student_task_manager_kv_v2"
   account_id = var.cloudflare_account_id
 }
 
