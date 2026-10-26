@@ -8,6 +8,7 @@ resource "cloudflare_worker_script" "task_worker" {
   name               = "student-task-manager-worker-live"
   content            = file("${path.module}/../application/worker.js")
   compatibility_date = "2024-03-01"
+  module             = true
 
   kv_namespace_binding {
     name         = "TASKS_KV"
